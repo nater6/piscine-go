@@ -1,1 +1,1 @@
-ls -A -t -p -m --hide=PATTERN
+ls -A -t -p -m --hide=PATTERN | sed 's/ //g'
