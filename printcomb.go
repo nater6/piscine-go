@@ -2,7 +2,7 @@ package piscine
 
 import "github.com/01-edu/z01"
 
-func printcomb() {
+func PrintComb() {
 	var i rune = '0'
 	var j rune = '0'
 	var k rune = '0'
