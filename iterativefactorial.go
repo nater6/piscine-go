@@ -2,7 +2,7 @@ package piscine
 
 func IterativeFactorial(nb int) int {
 	result1 := 1
-	if nb > 0 && nb < 21{
+	if nb > 0 && nb < 21 {
 		for i := 1; i <= nb; i++ {
 			result1 = result1 * i
 		}
