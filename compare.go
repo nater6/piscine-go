@@ -1,5 +1,7 @@
 package piscine
 
+import "fmt"
+
 func Compare(a, b string) int {
 	compareA := []rune(a)
 	compareB := []rune(b)
@@ -14,11 +16,16 @@ func Compare(a, b string) int {
 		j++
 	}
 
+	fmt.Println(i)
+	fmt.Println(j)
+
+	result := 5
 	if i == j {
-		return 0
+		result = 0
 	} else if i < j {
-		return -1
+		result = (1)
 	} else {
-		return 1
+		result = -1
 	}
+	return result
 }
