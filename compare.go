@@ -10,17 +10,15 @@ func Compare(a, b string) int {
 	}
 
 	j := 0
-
 	for j < len(compareB) {
 		j++
 	}
-	{
-		if i == j {
-			return 0
-		} else if i < j {
-			return -1
-		} else {
-			return 1
-		}
+
+	if i == j {
+		return 0
+	} else if i < j {
+		return -1
+	} else {
+		return 1
 	}
 }
