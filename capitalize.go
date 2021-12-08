@@ -10,14 +10,14 @@ func Capitalize(s string) string {
 			l++
 		} else if l == 0 && ((r[i] >= 'A' && r[i] <= 'Z') || (r[i] >= '0' && r[i] <= '9')) {
 			l++
-		} else if (r[i] >= 'A' && r[i] <= 'Z') {
+		} else if r[i] >= 'A' && r[i] <= 'Z' {
 			r[i] = r[i] + 32
 			l++
-		} else if (r[i] >= '0' && r[i] <= '9') || (r[i] >= 'a' && r[i] <= 'z')  {
+		} else if (r[i] >= '0' && r[i] <= '9') || (r[i] >= 'a' && r[i] <= 'z') {
 			l++
 		} else {
-			l=0
-		} 
+			l = 0
+		}
 	}
 	return string(r)
 }
