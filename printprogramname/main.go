@@ -7,17 +7,13 @@ import (
 )
 
 func main() {
-	a := (os.Args[0])
+	arguements := os.Args
+	name := arguements[0]
 
-	arune := []rune(a)
-
-	for i := 0; i < len(arune); i++ {
-		if arune[i] == '.' && arune[i+1] == '/' {
-			fiojg := arune[i+2:]
-
-			for _, j := range fiojg {
-				z01.PrintRune(j)
-			}
+	for i, l := range name {
+		if i > 1 {
+			z01.PrintRune(rune(l))
 		}
 	}
+	z01.PrintRune('\n')
 }
