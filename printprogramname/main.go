@@ -17,9 +17,7 @@ func main() {
 
 			for _, j := range fiojg {
 				z01.PrintRune(j)
-
 			}
 		}
-
 	}
 }
