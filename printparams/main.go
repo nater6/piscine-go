@@ -9,10 +9,11 @@ import (
 func main() {
 	args := os.Args
 
-	for _, word := range args {
+	for i := 1; i < len(args); i++ {
+		word := args[i]
 		for _, letter := range word {
 			z01.PrintRune(rune(letter))
 		}
+		z01.PrintRune('\n')
 	}
-	z01.PrintRune('\n')
 }
