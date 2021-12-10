@@ -3,7 +3,7 @@ package piscine
 func AppendRange(min, max int) []int {
 	slice := []int{}
 
-	if max < min {
+	if max <= min {
 		return slice
 	}
 
