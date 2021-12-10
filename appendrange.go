@@ -4,7 +4,7 @@ func AppendRange(min, max int) []int {
 	slice := []int{}
 
 	if max <= min {
-		return slice
+		return []int(nil)
 	}
 
 	for i := min; i < max; i++ {
