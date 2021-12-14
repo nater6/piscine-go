@@ -1,10 +1,11 @@
 package piscine
 
 func Map(f func(int) bool, a []int) []bool {
-	boolSlice := make([]bool, len(a))
+	boolSlice := []bool{}
 
 	for i := 0; i < len(a); i++ {
-		boolSlice = append(boolSlice, f(a[i]))
+		x := f(a[i])
+		boolSlice = append(boolSlice, x)
 	}
 	return boolSlice
 }
