@@ -8,19 +8,18 @@ import (
 func main() {
 	args := os.Args[1:]
 
-	if len(os.Args) == 0 {
+	if len(args) == 0 {
 		fmt.Println("File name missing")
-	}
-
-	if len(args) > 1 {
+	} else if len(args) > 1 {
 		fmt.Println("Too many arguments")
-	}
-
-	file, err := os.ReadFile("quest8.txt")
-
-	if err != nil {
-		fmt.Println(err.Error())
 	} else {
-		fmt.Println(string(file))
+
+		file, err := os.ReadFile("quest8.txt")
+
+		if err != nil {
+			fmt.Println(err.Error())
+		} else {
+			fmt.Println(string(file))
+		}
 	}
 }
