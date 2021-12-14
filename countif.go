@@ -1,6 +1,6 @@
 package piscine
 
-func Countif(f func(string) bool, tab []string) int {
+func CountIf(f func(string) bool, tab []string) int {
 	trueCounter := []int{}
 
 	for i := 0; i < len(tab); i++ {
