@@ -17,9 +17,9 @@ func main() {
 		file, err := os.ReadFile("quest8.txt")
 
 		if err != nil {
-			fmt.Println(err.Error())
+			fmt.Print(err.Error())
 		} else {
-			fmt.Println(string(file))
+			fmt.Print(string(file))
 		}
 	}
 }
