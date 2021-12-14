@@ -1,16 +1,23 @@
 package main
 
-import "fmt"
+import (
+	"github.com/01-edu/z01"
+)
 
 type pointers struct {
-	x int
-	y int
+	x string
+	y string
 }
 
 func main() {
 	points := pointers{}
-	points.x = 42
-	points.y = 21
+	points.x = "42"
+	points.y = "21"
 
-	fmt.Printf("x = %d, y = %d\n", points.x, points.y)
+	s := "x = " + points.x + ", y = " + points.y
+
+	for _, letters := range s {
+		z01.PrintRune(letters)
+	}
+	z01.PrintRune('\n')
 }
