@@ -1,6 +1,6 @@
 package piscine
 
-func any(f func(string) bool, a []string) bool {
+func Any(f func(string) bool, a []string) bool {
 	answer := false
 
 	for i := 0; i < len(a); i++ {
