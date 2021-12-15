@@ -9,10 +9,10 @@ func Rot14(s string) string {
 				r[i] = r[i] + 14
 			} else if r[i] <= 90 && r[i] >= 77 {
 				x := 90 - r[i]
-				r[i] = 65 + x + 14
+				r[i] = 65 - x + 14
 			} else if r[i] <= 122 && r[i] >= 109 {
 				y := 122 - r[i]
-				r[i] = 97 + y + 14
+				r[i] = 97 - y + 14
 			}
 		}
 	}
