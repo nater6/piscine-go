@@ -9,5 +9,5 @@ func Abort(a, b, c, d, e int) int {
 			}
 		}
 	}
-	return intSlice[3]
+	return intSlice[2]
 }
