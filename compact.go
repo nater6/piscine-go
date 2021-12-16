@@ -8,7 +8,6 @@ func Compact(ptr *[]string) int {
 	for i := 0; i < len(a); i++ {
 		if a[i] != "" {
 			nonZeroCounter++
-		} else {
 			newSlice = append(newSlice, a[i])
 		}
 	}
