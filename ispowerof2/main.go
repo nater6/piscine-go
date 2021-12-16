@@ -20,6 +20,8 @@ func main() {
 		z01.PrintRune('r')
 		z01.PrintRune('u')
 		z01.PrintRune('e')
+		z01.PrintRune('\n')
+
 		return
 	}
 
@@ -30,6 +32,7 @@ func main() {
 			z01.PrintRune('r')
 			z01.PrintRune('u')
 			z01.PrintRune('e')
+			z01.PrintRune('\n')
 			return
 		} else {
 			i *= 2
@@ -40,4 +43,5 @@ func main() {
 	z01.PrintRune('l')
 	z01.PrintRune('s')
 	z01.PrintRune('e')
+	z01.PrintRune('\n')
 }
