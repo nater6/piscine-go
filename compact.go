@@ -6,7 +6,7 @@ func Compact(ptr *[]string) int {
 	var newSlice []string
 
 	for i := 0; i < len(a); i++ {
-		if a[i] == "" {
+		if a[i] != "" {
 			nonZeroCounter++
 		} else {
 			newSlice = append(newSlice, a[i])
