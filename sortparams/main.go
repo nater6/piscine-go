@@ -24,8 +24,8 @@ func main() {
 		}
 	}
 
-	for _, print := range rSlice {
-		z01.PrintRune(print)
+	for _, p := range rSlice {
+		z01.PrintRune(p)
 		z01.PrintRune('\n')
 	}
 }
