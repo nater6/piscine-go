@@ -14,8 +14,7 @@ func TrimAtoi(s string) int {
 			noDig = false
 		} else if r[i] == '-' && intValue == 0 {
 			check = true
-		} else {
-		}
+		} 
 	}
 
 	if noDig {
